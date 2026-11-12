@@ -31,3 +31,14 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# ML model weights – never commit
+*.onnx
+*.pth
+*.pt
+*.safetensors
+
+# rembg model cache (stored in home dir, but guard public/ too)
+public/images/source/*.onnx
+public/images/source/*.pth
+~/.rembg/

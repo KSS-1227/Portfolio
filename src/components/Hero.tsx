@@ -7,7 +7,9 @@ import { SignalCanvas } from "./SignalCanvas";
 
 export function Hero() {
   return (
-    <section className="relative min-h-[96vh] flex flex-col justify-between pt-4 pb-12 px-4 sm:px-8 lg:px-12 overflow-hidden border-b border-white/[0.06] w-full">
+    <section className="relative h-[190vh] -mt-[76px] border-b border-white/[0.06] w-full">
+      {/* pinned stage: the halftone portrait disassembles while this stays in view */}
+      <div className="sticky top-0 h-screen min-h-[640px] flex flex-col justify-between pt-[92px] pb-12 px-4 sm:px-8 lg:px-12 overflow-hidden w-full">
       {/* Full-Screen Edge-to-Edge Particle Canvas */}
       <SignalCanvas />
 
@@ -39,7 +41,7 @@ export function Hero() {
       </div>
 
       {/* Center Hero Content Container */}
-      <div className="relative max-w-6xl mx-auto w-full flex flex-col items-center justify-center my-auto pt-56 sm:pt-64 md:pt-72 pb-6 z-20 pointer-events-none">
+      <div className="relative max-w-6xl mx-auto w-full flex flex-col items-center justify-center mt-auto pt-6 pb-6 z-20 pointer-events-none">
         <div className="flex flex-col items-center text-center w-full px-4">
           {/* Signature Editorial Name in Serif Typography */}
           <motion.h1
@@ -96,6 +98,7 @@ export function Hero() {
         <span className="hidden sm:inline-block">AVAILABLE FOR INTERNSHIPS</span>
         <span className="mx-auto sm:mx-0">BUILDING & RESEARCHING · AN ONGOING EXPLORATION</span>
       </div>
+    </div>
     </section>
   );
 }

@@ -26,7 +26,7 @@ html {
 body {
   background-color: #030303;
   color: #ededed;
-  overflow-x: hidden;
+  overflow-x: clip;
   font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
